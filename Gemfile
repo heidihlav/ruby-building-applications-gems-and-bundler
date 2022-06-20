@@ -1,25 +1,20 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-
 # gem "rails"
-
-source "https://rubygems.org"
-gem "rspec"
 gem "rest-client"
+gem "awesome_print", git: "git@github.com:awesome-print/awesome_print.git"
+gem 'hashie'
+gem 'sinatra', '2.0.2'
+gem 'octokit', '~> 2.0'
+
 
 group :development do
   gem "pry"
 end
 
-gem "awesome_print", git: "git@github.com:awesome-print/awesome_print.git"
+group :test do
+  gem 'rspec'
+end
 
-source "https://rubygems.org"
-gem 'hashie'
-
-source "https://rubygems.org"
-gem 'sinatra', '2.0.2'
-
-source "https://rubygems.org"
-gem 'octokit', '~> 2.0'
 
